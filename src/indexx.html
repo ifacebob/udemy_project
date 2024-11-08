@@ -9,19 +9,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header
-      class="header bg-white shadow-lg w-[100v] h-[6vh] p-8 flex items-center justify-between"
+      class="bg-white shadow-lg w-[100v] h-[10vh] p-8 flex items-center justify-between"
     >
-      <button
-        id="mobile-open-button"
-        class="text-3xl hidden focus:outline-none"
-      >
-        &#9776;
-      </button>
-
+      <div>
+        <button
+          id="mobile-open-button"
+          class="text-3xl sm:hidden focus:outline-none"
+        >
+          &#9776;
+        </button>
+      </div>
       <label for="">
         <a href="index.html">
           <img class="h-20 w-20" src="/img/logo-udemy.svg" alt="" />
@@ -29,10 +29,10 @@
       </label>
 
       <!-- nav bar -->
-      <nav class="flex justify-between items-center space-x-2.5">
+      <nav class="sm:flex hidden justify-between items-center space-x-2.5">
         <ul>
           <li>
-            <a class="cate" href=""> Categories </a>
+            <a href=""> Categories </a>
             <ul class="hidden">
               <li>
                 <a href="#">Development </a>
@@ -57,36 +57,34 @@
           </li>
         </ul>
 
-        <div>
-          <i class="search-icon bi bi-search absolute mt-[1.5vh] ml-[20px]"></i>
+        <button
+          class="flex w-[45vw] h-12 rounded-full border-[gray] border-[1px] bg-gray-100 items-center p-4"
+        >
+          <i class="bi bi-search"></i>
           <input
             type="text"
-            class="input-btn pl-[50px] w-[34vw] h-[4.5vh] border-[gray] border-[1px] rounded-[20px] bg-slate-50 items-center"
+            class="border-none placeholder-gray-400 bg-transparent p-4"
             placeholder="Search for anything"
           />
-        </div>
-        <!-- <button class="flex w-[45vw] h-12 rounded-full border-[gray] border-[1px] bg-gray-100 items-center p-4"> <i class="bi bi-search"></i> 
-        <input type="text" class="border-none placeholder-gray-400 bg-transparent p-4" placeholder="Search for anything" > </button> -->
-        <a class="udemy-biz" href="#">Udemy Business</a>
-        <a class="teach-udemy" href="#">Teach on Udemy</a>
+        </button>
+        <a href="#" class="md:flex sm:hidden">Udemy Business</a>
+        <a href="#">Teach on Udemy</a>
         <span><i class="bi bi-cart"></i></span>
 
-        <div class="flex justify-between items-center gap-4">
-          <a
-            class="log-in border-black border-[1px] items-center w-[8vw] h-[4.5vh] font-semibold text-[gray-600] content-center text-center hover:bg-slate-300"
-            href="#"
-            >Log in</a
-          >
-          <a
-            class="sign-up border-[black] border-[1px] w-[8vw] h-[4.5vh] font-semibold text-gray-50 bg-slate-600 content-center text-center hover:bg-slate-700 rgb(62, 65, 67)"
-            href="#"
-            >Sign up</a
-          >
+        <a
+          class="border-black border-[1px] px-4 py-2 font-semibold text-[gray-600] items-center justify-center hover:bg-slate-300"
+          href="#"
+          >Log in</a
+        >
+        <a
+          class="border-[black] border-[1px] px-4 py-2 font-semibold text-gray-50 bg-slate-600 items-center justify-center hover:bg-slate-700 rgb(62, 65, 67) md:flex sm:hidden flex"
+          href="#"
+          >Sign up</a
+        >
 
-          <button class="btn-web border-[1px] border-[black] w-[4vw] h-[4.5vh]">
-            <i class="bi bi-globe"></i>
-          </button>
-        </div>
+        <button class="border-[1px] border-[black] py-2 px-3">
+          <i class="bi bi-globe"></i>
+        </button>
       </nav>
     </header>
 
@@ -96,8 +94,8 @@
       <section>
         <div class="flex">
           <img
-            class="relative m-auto w-[1340px] h-[400px]"
-            src="/img/b0a649b4-0329-4c31-a9c6-4400e26bba0f.jpg"
+            class="relative mx-4 w-[1340px] h-[400px]"
+            src="/img/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg"
             alt=""
           />
           <div
@@ -111,31 +109,6 @@
             </p>
           </div>
         </div>
-
-
-                  <!-- <div
-            class="slider-div relative w-[98wv] h-[55vh] mx-4 border-slate-950 border-[0.5px] bg-white flex justify-end overflow-hidden"
-          >
-            <div
-              class="absolute w-[450px] h-[160px] shadow-xl border bg-white items-start mr-[850px] mt-[80px] p-4"
-            >
-              <div class="pl-5 pr-7 space-y-3">
-                <h1 class="text-3xl font-serif text-slate-800 font-semibold">
-                  Learning that gets you
-                </h1>
-                
-              </div>
-            </div>
-
-            <div
-              class="absolute w-0 h-[60vh] border-b-[400px] border-b-yellow-300 border-l-[600px] border-l-transparent border-r-transparent ml-[] flex justify-end object-cover"
-            ></div>
-            <img
-              class="absolute flex z-10 mr-[280px] mt-[105px]"
-              src="/img/image.png"
-              alt=""
-            />
-          </div>  -->
 
         <div class="mx-9 my-6 py-4 pb-4">
           <h2 class="text-slate-700 font-bold font-serif text-4xl">

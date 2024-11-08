@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1080px) {
+  .udemy-biz {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .teach-udemy {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+ input, .cate, .log-in , .sign-up, .btn-web, .slider-div {
+    display: none;
+  }
+
+  #mobile-open-button{
+    display: flex;
+  }
+
+  .search-icon{
+    position: relative;
+    margin-right: 1.5vh;
+
+  }
+}
+
